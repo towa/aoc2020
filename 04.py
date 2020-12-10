@@ -1,6 +1,4 @@
 from advent import AdventAPI
-import os
-
 
 class Passport():
     keys = [
@@ -81,7 +79,7 @@ class Passport():
             and self.pid_is_valid()
 
 
-a = AdventAPI(os.environ.get('AOC_TOKEN'))
+a = AdventAPI()
 keys = [
     'byr',
     'iyr',

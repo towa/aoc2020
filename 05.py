@@ -1,4 +1,3 @@
-import os
 from advent import AdventAPI
 
 class BoardingTree():
@@ -29,7 +28,7 @@ class BoardingTree():
 row = BoardingTree(list(range(128)))
 column = BoardingTree(list(range(8)))
 
-a = AdventAPI(os.environ.get('AOC_TOKEN'))
+a = AdventAPI()
 input = a.get_input(5).decode().split()
 result = [ 
     row.traverse(i[:7]) * 8 + column.traverse(i[-3:])
